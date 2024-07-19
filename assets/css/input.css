@@ -1,0 +1,120 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+    .container-base {
+        @apply container mx-auto px-16;
+    }
+    .g-cols2 {
+        @apply grid lg:grid-cols-2 gap-6 m-0;
+    }
+    .g-cols3 {
+        @apply grid lg:grid-cols-3 gap-6 m-0;
+    }
+    .g-cols4 {
+        @apply grid lg:grid-cols-4 gap-6 m-0;
+    }
+    .g-cols5 {
+        @apply grid lg:grid-cols-5 gap-6 m-0;
+    }
+
+    /* navbar links css */
+    .navbar ul li a {
+        position: relative;
+    }
+    .navbar ul li .links::after {
+        content:'';
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+        width: 100%;
+        height: 2px;
+        background-color: skyblue;
+        transform: bottom right;
+        transition: transform 0.5s ease;
+        transform: scaleX(0);
+    }
+    .navbar ul li .links:hover::after {
+        transform: scaleX(1);
+    } 
+    .doctors .doctor-carousel {
+        @apply relative;
+    }
+    .doctors .doctor-carousel button {
+        @apply absolute -top-16 bg-cyan-300;
+    }
+    .doctors .doctor-carousel span {
+        @apply text-5xl;
+    }
+    .doctors .doctor-carousel button.owl-next {
+        @apply right-0 text-cyan-100;
+    }
+    .doctors .doctor-carousel button.owl-prev {
+        @apply right-5 text-cyan-100;
+    }
+
+    .partners-company .partners {
+        @apply relative;
+    }
+    .partners-company button {
+        @apply absolute top-10 ;
+    }
+    .partners-company span {
+        @apply text-5xl;
+    }
+    .partners-company button.owl-next {
+        @apply right-3;
+    }
+    .partners-company button.owl-prev {
+        @apply left-3;
+    }
+
+    /* popup */
+    .popup {
+        position: fixed;
+        width: 400px;
+        padding: 20px;
+        background-color: #222;
+        color: #fff;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        display: none;
+    }
+    .popup.show {
+        display: block;
+        animation: showpopup 2s;
+    }
+    .popup .popup-close {
+        position: absolute;
+        cursor: pointer;
+        right: 20px;
+        top: 20px;
+    }
+    @keyframes showpopup {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+    }  
+    }
+
+    .testimonial-section .testimonial-content .owl-dots {
+    padding: 10px;
+    }
+    .testimonial-section .testimonial-content .owl-dots .owl-dot {
+    width: 10px;
+    height: 10px;
+    border: 1px solid gray;
+    border-radius: 50%;
+    margin: 3px;
+    }
+    .testimonial-section .testimonial-content .owl-dots .owl-dot.active {
+    background-color: white;
+    }
+
+    .title {}
+    .title-sm {}
+    .title-md {}
+    .title-lg {}
+    .title-xl {}
