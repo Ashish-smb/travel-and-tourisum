@@ -14,24 +14,23 @@ $('#product-next').click(function() {
     guide.trigger('next.owl.carousel');
 });
 
-$('.partners').owlCarousel({
-    items: 6,
-    margin:20,
-    autoplay:true,
-    loop:true,
-    autoplayTimeout:4000,
-    dots:true,
-    nav:true,
-    responsive : {
-        0 : {
-            items:2
-        },
-        600 : {
-            items:4
-        },
-        900: {
-            items:5
-        }
-    }
+
+// search tab menu
+const btns = $('.hero-area ul li a');
+const tabs = $('.hero-area .menu-tab > div');
+btns.click(function() {
+    btns.removeClass('active');
+    $(this).addClass('active');
+    tabs.removeClass('active');
+    $($(this).data('tab')).addClass('active');
 });
 
+// menu-tab
+const btn = $('.tab-menu .tab-menu-links a');
+const tab = $('.tab-menu .menu-tab > div ');
+btn.click(function() {
+    btn.removeClass('active');
+    $(this).addClass('active');
+    tab.removeClass('active');
+    $($(this).data('menu')).addClass('active');    
+});

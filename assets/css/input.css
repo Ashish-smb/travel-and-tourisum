@@ -37,6 +37,30 @@
         width: 12px;
         height: 12px;
     }
+    /*searc-menu-tab */
+    .hero-area ul li a.active {
+        border-bottom: 1px solid white;
+    }
+    .hero-area .tab {
+        display: none;
+    }
+    .hero-area .tab.active {
+        display: block;
+    }
+
+    /* menu-tab */
+    .tab-menu .tab-menu-links a.active {
+        background-color: rgb(37, 99, 235);
+        color: white;
+        box-shadow: none;
+    }
+    .tab-menu .menu-tab > div {
+        display: none;
+    }
+    .tab-menu .menu-tab > div.active {
+        display: block;
+    }
+
 
 }
 
