@@ -14,32 +14,57 @@
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-    
-     
-
+    <!-- popup -->
+    <div class="popup z-10 bg-slate-300/80 rounded bottom-5 right-[10px]">
+        <div class="fa-solid fa-x popup-close text-black hover:text-blue-500 duration-300"></div>
+        <h4 class="text-2xl capitalize font-semibold">sign in</h4>
+        <form action="index.html" class="block">
+            <div class="my-3">
+                <input type="email" placeholder="Email or Username" class="p-2 rounded text-black w-full outline-none">
+            </div>
+            <div class="my-3">
+                <input type="password" placeholder="Password" class="p-2 rounded text-black w-full outline-none">
+            </div>
+            <button class=" bg-blue-500 p-2 rounded hover:bg-blue-600 text-white px-6 duration-200">
+                submit
+            </button>
+        </form>
+        
+    </div>
     <!-- topbar -->
     <div class="topbar bg-black px-10 py-3 max-lg:hidden">
         <div class="g-cols2 text-sm">
             <div class="contact-detail flex items-center text-slate-300 gap-3">
-                <span class="border-r border-slate-400 pr-3">
+                <a href="tel:919910705147" class="border-r border-slate-400 pr-3">
                     <i class="fa-solid fa-phone"></i>
-                    +(91) 90-70-1180
-                </span>
-                <span>
+                    +(91) 99107-05147
+                </a>
+                <a href="mainto:info@spreadmybusiness.in">
                     <i class="fa-solid fa-envelope "></i>
                     travelerwp@gmail.com
-                </span>
+                </a>
             </div>
-            <div class="social-media-font flex items-center justify-end text-slate-300 gap-3">
-                <i class="fa-brands fa-instagram cursor-pointer duration-200 border-r border-slate-400 pr-6 hover:text-slate-100"></i>
-                <i class="fa-brands fa-x-twitter cursor-pointer duration-200 border-r border-slate-400 pr-6 hover:text-slate-100"></i>
-                <i class="fa-brands fa-youtube cursor-pointer duration-200 border-r border-slate-400 pr-6 hover:text-slate-100"></i>
-                <i class="fa-brands fa-whatsapp cursor-pointer duration-200 border-r border-slate-400 pr-6 hover:text-slate-100"></i>
+            <div class="flex items-center justify-end text-slate-300">
+                <a href="#" class="inline-block px-5 border-r border-gray-600 hover:text-slate-100 duration-200">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#" class="inline-block px-5 border-r border-gray-600 hover:text-slate-100 duration-200">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+                <a href="#" class="inline-block px-5 border-r border-gray-600 hover:text-slate-100 duration-200">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+                <a href="#" class="inline-block px-5 hover:text-slate-100 duration-200">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <!-- <i class="fa-brands fa-x-twitter cursor-pointer duration-200 border-r border-slate-400 px-5 hover:text-slate-100"></i>
+                <i class="fa-brands fa-youtube cursor-pointer duration-200 border-r border-slate-400 px-5 hover:text-slate-100"></i>
+                <i class="fa-brands fa-whatsapp cursor-pointer duration-200 border-r border-slate-400 px-5 hover:text-slate-100"></i> -->
             </div>
         </div>
     </div>
     <!-- navbar -->
-    <nav class="navbar sticky left-0 top-0 w-full bg-black bg-opacity-60 z-10">
+    <nav class="navbar py-4 sticky left-0 top-0 w-full bg-black/90 z-10">
         <div class="py-2 px-10 flex items-center justify-between">
             <div class="navbar-logo text-white text-4xl font-semibold font-serif">
                 Travlers
@@ -47,47 +72,37 @@
             </div>
             <div class="navbar-menu capitalize max-lg:hidden">
                 <i class="fa-solid fa-bars lg:hidden text-white rounded bg-black"></i>
-                <ul class="flex items-center gap-6 font-semibold text-white">
+                <ul class="flex items-center gap-10 font-semibold text-white">
                     <li>
-                        <a href="javascript:void(0)" class="">home</a>
-                        <i class="fa-solid fa-angle-down"></i>
+                        <a href="javascript:void(0)" class="hover:text-blue-400 duration-300">home</a>
                     </li>
                     <li>
-                        <a href="javascript:void(0)" class="">hotel</a>
-                        <i class="fa-solid fa-angle-down"></i>
+                        <a href="javascript:void(0)" class="hover:text-blue-400 duration-300">hotel</a>
                     </li>
                     <li>
-                        <a href="javascript:void(0)" class="">tour</a>
-                        <i class="fa-solid fa-angle-down"></i>
+                        <a href="javascript:void(0)" class="hover:text-blue-400 duration-300">tour</a>
                     </li>
                     <li>
-                        <a href="javascript:void(0)" class="">activity</a>
-                        <i class="fa-solid fa-angle-down"></i>
+                        <a href="javascript:void(0)" class="hover:text-blue-400 duration-300">activity</a>
                     </li>
                     <li>
-                        <a href="javascript:void(0)" class="">rental</a>
-                        <i class="fa-solid fa-angle-down"></i>
+                        <a href="javascript:void(0)" class="hover:text-blue-400 duration-300">rental</a>
                     </li>
                     <li>
-                        <a href="javascript:void(0)" class="">car</a>
-                        <i class="fa-solid fa-angle-down"></i>
+                        <a href="javascript:void(0)" class="hover:text-blue-400 duration-300">car</a>
                     </li>
                     <li>
-                        <a href="javascript:void(0)" class="">pages</a>
-                        <i class="fa-solid fa-angle-down"></i>
+                        <a href="javascript:void(0)" class="hover:text-blue-400 duration-300">pages</a>
                     </li>
                     <li>
-                        <a href="javascript:void(0)" class="links">EUR</a>
-                        <i class="fa-solid fa-angle-down"></i>
+                        <a href="javascript:void(0)" class="hover:text-blue-400 duration-300">EUR</a>
                     </li>
                     <li>
-                        <i class="fa-regular fa-user border p-3 cursor-pointer rounded-full bg-white text-black"></i>
+                        <i class="fa-regular fa-user border w-10 h-10 flex items-center justify-center cursor-pointer rounded-full bg-white text-black hover:bg-slate-100/10 hover:text-white duration-500" id="login"></i>
                     </li>
+                    
                     <li>
-                        <i class="fa-solid fa-trash border p-3 cursor-pointer rounded-full bg-white text-black"></i>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0)" class="bg-cyan-600 text-white rounded-full py-3 px-6 hover:bg-cyan-500 duration-300">become a host</a>
+                        <a href="javascript:void(0)" class="bg-cyan-600 text-white rounded-full py-3 px-6 hover:bg-cyan-500 duration-300" id="host">become a host</a>
                     </li>
                 </ul>
             </div>
@@ -95,7 +110,7 @@
     </nav> 
     <!-- hero area -->
     <div class="hero-area relative">
-        <div class="hero-area-img brightness-50 w-full h-[400px]  border-b-2">
+        <div class="hero-area-img brightness-50 w-full h-[470px]  border-b-2">
             <img src="assets/imgs/Red fort.jpg" class="h-full object-cover w-full" alt="">
         </div>
 
@@ -134,17 +149,17 @@
                                 <i class="fa-solid fa-location-dot "></i>
                                 <input type="text" placeholder="Where are you going?" class="outline-none">
                             </div>
-                            <div class="">
+                            <div class="hover:text-blue-400 duration-300">
                                 <label for="location" class="block">check in</label>
                                 <!-- <i class="fa-regular fa-arrow-down"></i> -->
                                 <input type="date"  class="outline-none">
                             </div>
-                            <div class="">
+                            <div class="hover:text-blue-400 duration-300">
                                 <label for="location" class="block">check out</label>
                                 <!-- <i class="fa-regular fa-arrow-down"></i> -->
                                 <input type="date"  class="outline-none">
                             </div>
-                            <div class="">
+                            <div class="hover:text-blue-400 duration-300">
                                 <label for="location" class="block">guests</label>
                                 <!-- <i class="fa-regular fa-arrow-down"></i> -->
                                 <input type="text" placeholder="1 guests, 1 room" class="outline-none">
@@ -164,17 +179,17 @@
                     <div class="rounded-full  w-[70%] absolute p-3 shadow-lg -bottom-8 bg-white mx-auto">
                         <form action="index.html" class="capitalize flex justify-around">
                             
-                            <div class="">
+                            <div class="hover:text-blue-400 duration-300">
                                 <label for="location" class="block">check in</label>
                                 <!-- <i class="fa-regular fa-arrow-down"></i> -->
                                 <input type="date"  class="outline-none">
                             </div>
-                            <div class="">
+                            <div class="hover:text-blue-400 duration-300">
                                 <label for="location" class="block">check out</label>
                                 <!-- <i class="fa-regular fa-arrow-down"></i> -->
                                 <input type="date"  class="outline-none">
                             </div>
-                            <div class="">
+                            <div class="hover:text-blue-400 duration-300">
                                 <label for="location" class="block">guests</label>
                                 <!-- <i class="fa-regular fa-arrow-down"></i> -->
                                 <input type="text" placeholder="1 guests, 1 room" class="outline-none">
@@ -198,17 +213,17 @@
                                 <i class="fa-solid fa-location-dot "></i>
                                 <input type="text" placeholder="Where are you going?" class="outline-none">
                             </div>
-                            <div class="">
+                            <div class="hover:text-blue-400 duration-300">
                                 <label for="location" class="block">check in</label>
                                 <!-- <i class="fa-regular fa-arrow-down"></i> -->
                                 <input type="date"  class="outline-none">
                             </div>
-                            <div class="">
+                            <div class="hover:text-blue-400 duration-300">
                                 <label for="location" class="block">check out</label>
                                 <!-- <i class="fa-regular fa-arrow-down"></i> -->
                                 <input type="date"  class="outline-none">
                             </div>
-                            <div class="">
+                            <div class="hover:text-blue-400 duration-300">
                                 <label for="location" class="block">guests</label>
                                 <!-- <i class="fa-regular fa-arrow-down"></i> -->
                                 <input type="text" placeholder="1 guests, 1 room" class="outline-none">
@@ -228,17 +243,17 @@
                     <div class="rounded-full  w-[70%] absolute p-3 shadow-lg -bottom-8 bg-white mx-auto">
                         <form action="index.html" class="capitalize flex justify-around">
                             
-                            <div class="">
+                            <div class="hover:text-blue-400 duration-300">
                                 <label for="location" class="block">check in</label>
                                 <!-- <i class="fa-regular fa-arrow-down"></i> -->
                                 <input type="date"  class="outline-none">
                             </div>
-                            <div class="">
+                            <div class="hover:text-blue-400 duration-300">
                                 <label for="location" class="block">check out</label>
                                 <!-- <i class="fa-regular fa-arrow-down"></i> -->
                                 <input type="date"  class="outline-none">
                             </div>
-                            <div class="">
+                            <div class="hover:text-blue-400 duration-300">
                                 <label for="location" class="block">guests</label>
                                 <!-- <i class="fa-regular fa-arrow-down"></i> -->
                                 <input type="text" placeholder="1 guests, 1 room" class="outline-none">
@@ -262,17 +277,17 @@
                                 <i class="fa-solid fa-location-dot "></i>
                                 <input type="text" placeholder="Where are you going?" class="outline-none">
                             </div>
-                            <div class="">
+                            <div class="hover:text-blue-400 duration-300">
                                 <label for="location" class="block">check in</label>
                                 <!-- <i class="fa-regular fa-arrow-down"></i> -->
                                 <input type="date"  class="outline-none">
                             </div>
-                            <div class="">
+                            <div class="hover:text-blue-400 duration-300">
                                 <label for="location" class="block">check out</label>
                                 <!-- <i class="fa-regular fa-arrow-down"></i> -->
                                 <input type="date"  class="outline-none">
                             </div>
-                            <div class="">
+                            <div class="hover:text-blue-400 duration-300">
                                 <label for="location" class="block">guests</label>
                                 <!-- <i class="fa-regular fa-arrow-down"></i> -->
                                 <input type="text" placeholder="1 guests, 1 room" class="outline-none">
@@ -292,17 +307,17 @@
                     <div class="rounded-full  w-[70%] absolute p-3 shadow-lg -bottom-8 bg-white mx-auto">
                         <form action="index.html" class="capitalize flex justify-around">
                            
-                            <div class="">
+                            <div class="hover:text-blue-400 duration-300">
                                 <label for="location" class="block">check in</label>
                                 <!-- <i class="fa-regular fa-arrow-down"></i> -->
                                 <input type="date"  class="outline-none">
                             </div>
-                            <div class="">
+                            <div class="hover:text-blue-400 duration-300">
                                 <label for="location" class="block">check out</label>
                                 <!-- <i class="fa-regular fa-arrow-down"></i> -->
                                 <input type="date"  class="outline-none">
                             </div>
-                            <div class="">
+                            <div class="hover:text-blue-400 duration-300">
                                 <label for="location" class="block">guests</label>
                                 <!-- <i class="fa-regular fa-arrow-down"></i> -->
                                 <input type="text" placeholder="1 guests, 1 room" class="outline-none">
@@ -415,7 +430,7 @@
                     </div>
                 </div>
                 <div class="card rounded-lg relative overflow-hidden cursor-pointer">
-                    <div class="card-img rounded-lg brightness-50 hover:scale-125 duration-700 h-[195px]">
+                    <div class="card-img rounded-lg brightness-50 hover:scale-125 duration-700 h-[245px]">
                         <img src="assets/imgs/Lodi garden.jpg" class="rounded-lg h-full w-full" alt="">
                     </div>
                     <div class="card-content absolute top-1/3 text-white p-3">
